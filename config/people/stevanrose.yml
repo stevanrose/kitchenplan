@@ -1,0 +1,66 @@
+groups:
+    - all
+recipes:
+    mac_os_x:
+        - applications::omnigraffle
+        - applications::sublime_text_3
+        - osxdefaults::set_computer_name
+attributes:
+    osxdefaults:
+        computername: pro-spider
+    sublime_text_packages:
+        -
+            name: SideBarEnhancements
+            source: https://github.com/titoBouzout/SideBarEnhancements
+            branch: st3
+        -
+            name: GitGutter
+            source: https://github.com/jisaacks/GitGutter.git
+            branch: master
+        -
+            name: BracketHighlighter
+            source: https://github.com/facelessuser/BracketHighlighter.git
+            branch: ST3
+        -
+            name: Base16
+            source: https://github.com/chriskempson/base16-textmate.git
+            branch: master
+        -
+            name: Theme - Flatland
+            source: git://github.com/thinkpixellab/flatland.git
+            branch: master
+        -
+            name: GoSublime
+            source: git://github.com/DisposaBoy/GoSublime
+            branch: master
+    git:
+        name: Stevan Rose
+        email: stevan.rose@gmail.com
+    authorization:
+        sudo:
+            users:
+                - stevanrose
+            passwordless: true
+            include_sudoers_d: true
+    homebrewalt:
+        appsi:
+            - git
+            - git-extras
+            - git-flow
+            - maven
+            - sbt
+            - scala
+            - wget
+        cask_apps:
+            - evernote
+            - intellij-idea
+            - mongodb
+            - mongodbpreferencepane
+            - postgres
+            - slack
+            - sourcetree
+            - vagrant-manager
+            - vagrant
+            - virtualbox
+        terminal:
+            color_scheme: "Pro"
