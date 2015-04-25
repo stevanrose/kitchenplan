@@ -19,6 +19,8 @@ recipes:
         - osxdefaults::tap_to_click
 attributes:
     homebrewalt:
+        apps:
+            - imagemagick
         cask_apps:
             - firefox
             - flash-player

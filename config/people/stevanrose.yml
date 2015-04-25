@@ -5,9 +5,10 @@ recipes:
         - applications::omnigraffle
         - applications::sublime_text_3
         - osxdefaults::set_computer_name
+        - osxdefaults::set_terminal_profile
 attributes:
     osxdefaults:
-        computername: pro-spider
+        computername: roses
     sublime_text_packages:
         -
             name: SideBarEnhancements
@@ -43,7 +44,7 @@ attributes:
             passwordless: true
             include_sudoers_d: true
     homebrewalt:
-        appsi:
+        apps:
             - git
             - git-extras
             - git-flow
@@ -52,11 +53,13 @@ attributes:
             - scala
             - wget
         cask_apps:
+            - adobe-creative-cloud
             - evernote
             - intellij-idea
             - mongodb
             - mongodbpreferencepane
             - postgres
+            - pgadmin3
             - slack
             - sourcetree
             - vagrant-manager
